@@ -46,6 +46,8 @@
   plru = pull --rebase upstream
   mours = merge -s recursive -Xours
   mtheirs = merge -s recursive -Xtheirs
+  #	lcp = "!f() { git l origin/"$(git st | grep 'On branch' | cut -d' ' -f3)"..HEAD; }; f" #liste les commit sur la branche à push
+
 [help]
   autocorrect = 1
 [push]
